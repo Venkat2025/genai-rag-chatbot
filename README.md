@@ -1,18 +1,18 @@
-# RAG Chatbot (Azure SQL Login + OpenAI Embeddings)
+# RAG Chatbot (SQLite Login + OpenAI Embeddings)
 
 This project provides a local, production-style baseline for a Retrieval-Augmented Generation chatbot with:
 
-- Login backed by Azure SQL Server (`users` table)
+- Login system backed by SQLite (users table)
 - Chat UI (login page + chat page)
-- Persistent chat history in Azure SQL (`chats`, `messages`)
+- Persistent chat history in SQLite (`chats`, `messages`)
 - RAG retrieval from indexed local documents (`document_chunks` with OpenAI embeddings)
 - OpenAI response generation
 
 ## 1) Prerequisites
 
 - Python 3.11+
-- ODBC Driver 18 for SQL Server
-- Reachable Azure SQL Server database
+- SQLite (comes pre-installed with Python)
+- OpenAI API Key
 
 ## 2) Setup
 
